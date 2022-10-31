@@ -1,0 +1,239 @@
+{
+      "info": {
+            "_postman_id": "22eb6221-0fb9-4644-93c9-a7f39f7f3222",
+            "name": "Poyecto",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "_exporter_id": "16084421"
+      },
+      "item": [
+            {
+                  "name": "carrito",
+                  "item": [
+                        {
+                              "name": "POST NUEVO CARRITO",
+                              "request": {
+                                    "method": "POST",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/carrito",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": ["api", "carrito"]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "DELETE TODO EL CARRITO",
+                              "request": {
+                                    "method": "DELETE",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/carrito/{{id}}",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": ["api", "carrito", "{{id}}"]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "GET PRODUCTOS DEL CARRITO",
+                              "request": {
+                                    "method": "GET",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/carrito/{{id}}/productos",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": [
+                                                "api",
+                                                "carrito",
+                                                "{{id}}",
+                                                "productos"
+                                          ]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "POST NUEVO PRODUCTO DEL CARRITO",
+                              "request": {
+                                    "method": "POST",
+                                    "header": [],
+                                    "body": {
+                                          "mode": "raw",
+                                          "raw": "  {\r\n    \"id\": \"{{idProducto}}\" \r\n  }",
+                                          "options": {
+                                                "raw": {
+                                                      "language": "json"
+                                                }
+                                          }
+                                    },
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/carrito/{{id}}/productos",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": [
+                                                "api",
+                                                "carrito",
+                                                "{{id}}",
+                                                "productos"
+                                          ]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "DELETE PRODUCTO DEL CARRITO",
+                              "request": {
+                                    "method": "DELETE",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/carrito/{{id}}/productos/{{id}}",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": [
+                                                "api",
+                                                "carrito",
+                                                "{{id}}",
+                                                "productos",
+                                                "{{id}}"
+                                          ]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "GET TODOS LOS CARRITOS",
+                              "request": {
+                                    "method": "GET",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/carrito/",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": ["api", "carrito", ""]
+                                    }
+                              },
+                              "response": []
+                        }
+                  ]
+            },
+            {
+                  "name": "productos",
+                  "item": [
+                        {
+                              "name": "GET TODOS LOS PRODUCTOS",
+                              "request": {
+                                    "method": "GET",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/productos",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": ["api", "productos"]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "POST PRODUCTO",
+                              "request": {
+                                    "method": "POST",
+                                    "header": [],
+                                    "body": {
+                                          "mode": "raw",
+                                          "raw": "  {\r\n    \"id\": \"8d1b0a9f-fd00-46f8-9045-5c31287da1f0\",\r\n    \"title\": \"Monitores33\",\r\n    \"description\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora earum neque provident, sed illum officiis deserunt, hic id, minima in illo enim! Voluptate, pariatur! Consequatur nisi quod deserunt quia.\",\r\n    \"stock\": \"23\",\r\n    \"price\": \"1375.23\",\r\n    \"thumbnail\": \"https://cdn2.iconfinder.com/data/icons/flat-set-2/64/flat_set_2-09-512.png\",\r\n    \"codigo\": 654321,\r\n    \"timestamp\": \"2022-10-09T03:24:47.188Z\"\r\n  }",
+                                          "options": {
+                                                "raw": {
+                                                      "language": "json"
+                                                }
+                                          }
+                                    },
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/productos?admin=true",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": ["api", "productos"],
+                                          "query": [
+                                                {
+                                                      "key": "admin",
+                                                      "value": "true"
+                                                }
+                                          ]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "PUT PRODUCTO",
+                              "request": {
+                                    "method": "PUT",
+                                    "header": [],
+                                    "body": {
+                                          "mode": "raw",
+                                          "raw": "  {\r\n    \"id\": \"8d1b0a9f-fd00-46f8-9045-5c31287da1f0\",\r\n    \"title\": \"Monitores234\",\r\n    \"description\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora earum neque provident, sed illum officiis deserunt, hic id, minima in illo enim! Voluptate, pariatur! Consequatur nisi quod deserunt quia.\",\r\n    \"stock\": \"23\",\r\n    \"price\": \"1375.23\",\r\n    \"thumbnail\": \"https://cdn2.iconfinder.com/data/icons/flat-set-2/64/flat_set_2-09-512.png\",\r\n    \"codigo\": 654321,\r\n    \"timestamp\": \"2022-10-09T03:24:47.188Z\"\r\n  }",
+                                          "options": {
+                                                "raw": {
+                                                      "language": "json"
+                                                }
+                                          }
+                                    },
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/productos/{{idProduct}}?admin=true",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": [
+                                                "api",
+                                                "productos",
+                                                "{{idProduct}}"
+                                          ],
+                                          "query": [
+                                                {
+                                                      "key": "admin",
+                                                      "value": "true"
+                                                }
+                                          ]
+                                    }
+                              },
+                              "response": []
+                        },
+                        {
+                              "name": "DELETE PRODUCTO",
+                              "request": {
+                                    "method": "DELETE",
+                                    "header": [],
+                                    "url": {
+                                          "raw": "http://localhost:8080/api/productos/{{idProduct}}?admin=true",
+                                          "protocol": "http",
+                                          "host": ["localhost"],
+                                          "port": "8080",
+                                          "path": [
+                                                "api",
+                                                "productos",
+                                                "{{idProduct}}"
+                                          ],
+                                          "query": [
+                                                {
+                                                      "key": "admin",
+                                                      "value": "true"
+                                                }
+                                          ]
+                                    }
+                              },
+                              "response": []
+                        }
+                  ]
+            }
+      ]
+}

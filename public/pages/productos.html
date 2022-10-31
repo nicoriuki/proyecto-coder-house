@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Productos e-commerce</title>
+</head>
+
+<body>
+
+  <h1>Productos</h1>
+  <div class="btnCarritos">
+    <input type="button" value="Crear un nuevo carrito" id="btnCarrito">
+
+    <select name="carritos" id="carritos"></select>
+    <button id="btnIrCarrito"><a href="./carrito.html">ir al carrito</a></button>
+  </div>
+  <div class="cards-products" id="cardsProducts"></div>
+
+  <div class="formIngreso">
+    <h2>Ingresar Producto</h2>
+    <form id="formIngreso">
+      <div class="formIngreso__items">
+        <input type="text" name="name" id="name" placeholder="Producto" required>
+      </div>
+      <div class="formIngreso__items">
+        <input type="text" name="description" id="description" placeholder="Descripcion" required>
+      </div>
+      <div class="formIngreso__items">
+        <input type="number" name="price" id="price" placeholder="Precio" required>
+      </div>
+      <div class="formIngreso__items">
+        <input type="text" name="thumbnail" id="thumbnail" placeholder="thumbnail" required>
+
+      </div>
+
+      <div class="formIngreso__items">
+        <input type="number" name="stock" id="stock" placeholder="Stock" required>
+      </div>
+      <div class="formIngreso__items">
+        <input type="number" name="codigo" id="codigo" placeholder="codigo" required>
+      </div>
+      <input type="hidden" name="id" id="idInput" value="">
+      <input type="hidden" name="metodo" id="metodo" value="POST">
+      <div class="formIngreso__items">
+        <input type="submit" id="btnEnviar" class="btnEnviar" value="Enviar">
+      </div>
+    </form>
+  </div>
+  <div class="lista">
+    <h2>elije una imagen par aprobar</h2>
+    <ul>
+      <li>https://cdn3.iconfinder.com/data/icons/technology-13/48/tech-color_keyboard-512.png <img
+          src="https://cdn3.iconfinder.com/data/icons/technology-13/48/tech-color_keyboard-512.png"></li>
+      <li>https://cdn3.iconfinder.com/data/icons/technology-13/48/tech-color_computer-512.png<img
+          src="https://cdn3.iconfinder.com/data/icons/technology-13/48/tech-color_computer-512.png"></li>
+      <li>https://cdn2.iconfinder.com/data/icons/flat-set-2/64/flat_set_2-09-512.png<img
+          src="https://cdn2.iconfinder.com/data/icons/flat-set-2/64/flat_set_2-09-512.png"></li>
+      <li>https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/input-mouse-512.png<img
+          src="https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/input-mouse-512.png"></li>
+    </ul>
+  </div>
+  <div class="btnCarritos">
+    <button><a href="../index.html">Volver a elegir usuario</a></button>
+  </div>
+  <script src="../javascript/productos.js" type="module"></script>
+</body>
+
+</html>

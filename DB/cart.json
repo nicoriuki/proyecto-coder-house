@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "b8f4c1ed-90d3-4c84-94a5-e8e27f016cb9",
+    "timestamp": "2022-10-10T13:54:43.261Z",
+    "productos": [
+      {
+        "_id": "d113a98c-e408-4cc3-8122-2a3e0bd58b18",
+        "title": "Mouse",
+        "price": 532.21,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora earum neque provident, sed illum officiis deserunt, hic id, minima in illo enim! Voluptate, pariatur! Consequatur nisi quod deserunt quia.",
+        "stock": 23,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/input-mouse-512.png",
+        "codigo": 123456,
+        "timestamp": ""
+      }
+    ]
+  },
+  {
+    "_id": "45adef01-5201-49eb-bc7d-5d790b404af0",
+    "timestamp": "10/10/2022 22:06:35",
+    "productos": [
+      {
+        "title": "Teclado1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora earum neque provident, sed illum officiis deserunt, hic id, minima in illo enim! Voluptate, pariatur! Consequatur nisi quod deserunt quia.",
+        "stock": "23",
+        "price": "263.1",
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/technology-13/48/tech-color_keyboard-512.png",
+        "codigo": "615243",
+        "_id": "c73f2491-2e89-4194-b33f-cf8d47b906cf",
+        "timestamp": "10/10/2022 19:01:16"
+      },
+      {
+        "title": "3434",
+        "description": "343",
+        "stock": "3434",
+        "price": "434",
+        "thumbnail": "https://cdn2.iconfinder.com/data/icons/flat-set-2/64/flat_set_2-09-512.png",
+        "codigo": "3434",
+        "_id": "c59078f2-cd14-46ea-9ba1-e2b74c298717",
+        "timestamp": "31/10/2022 10:28:23"
+      }
+    ]
+  },
+  {
+    "_id": "d9ae93d3-a4ee-4da4-8434-6a899ea9f397",
+    "timestamp": "12/10/2022 00:01:43",
+    "productos": [
+      {
+        "_id": "70dbcabf-8080-407c-9035-c685c8f66ea0",
+        "title": "Mouse1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora earum neque provident, sed illum officiis deserunt, hic id, minima in illo enim! Voluptate, pariatur! Consequatur nisi quod deserunt quia.",
+        "stock": "23",
+        "price": "532.21",
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/input-mouse-512.png",
+        "codigo": "123456"
+      }
+    ]
+  }
+]
